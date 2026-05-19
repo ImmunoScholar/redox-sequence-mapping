@@ -100,12 +100,13 @@ Claims about actual oxidation, electrophile adduction, solvent accessibility, re
 
 | Path | Purpose |
 |---|---|
-| `scripts/` | Ordered R scripts for input preparation, residue mapping, sliding-window analysis, null-model testing, and visualisation |
-| `data/raw/` | Example FASTA input used to demonstrate the pipeline |
+| `scripts/` | Ordered R scripts for example-sequence analysis, UniProt FASTA retrieval, human-protein analysis, result summarisation, and visualisation |
+| `data/raw/` | Example FASTA input and UniProt-derived human protein FASTA |
 | `data/processed/` | Reserved for processed sequence-level outputs in future extensions |
-| `results/tables/` | CSV outputs from residue mapping, sliding-window analysis, and null-model testing |
-| `results/figures/` | Generated visual summaries of residue frequency, local density, and null-model comparison |
+| `results/tables/` | CSV outputs from residue mapping, sliding-window analysis, null-model testing, and human-protein summarisation |
+| `results/figures/` | Generated visual summaries for example and UniProt-derived human protein analyses |
 | `renv.lock` | R package lockfile for reproducibility |
+| `metadata/` | Accession list and provenance files for curated human protein inputs |
 | `docs/` | Project notes and future methodological documentation |
 
 ## Outputs
