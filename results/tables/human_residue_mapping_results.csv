@@ -1,0 +1,31 @@
+"residue","count","frequency","protein","length"
+"C",10,0.0248138957816377,"sp|P60484|PTEN_HUMAN Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase and dual-specificity protein phosphatase PTEN OS=Homo sapiens OX=9606 GN=PTEN PE=1 SV=1",403
+"K",34,0.0843672456575682,"sp|P60484|PTEN_HUMAN Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase and dual-specificity protein phosphatase PTEN OS=Homo sapiens OX=9606 GN=PTEN PE=1 SV=1",403
+"H",13,0.032258064516129,"sp|P60484|PTEN_HUMAN Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase and dual-specificity protein phosphatase PTEN OS=Homo sapiens OX=9606 GN=PTEN PE=1 SV=1",403
+"C",10,0.0254452926208651,"sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53 PE=1 SV=4",393
+"K",20,0.0508905852417303,"sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53 PE=1 SV=4",393
+"H",12,0.0305343511450382,"sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53 PE=1 SV=4",393
+"C",7,0.0145833333333333,"sp|P31749|AKT1_HUMAN RAC-alpha serine/threonine-protein kinase OS=Homo sapiens OX=9606 GN=AKT1 PE=1 SV=2",480
+"K",36,0.075,"sp|P31749|AKT1_HUMAN RAC-alpha serine/threonine-protein kinase OS=Homo sapiens OX=9606 GN=AKT1 PE=1 SV=2",480
+"H",13,0.0270833333333333,"sp|P31749|AKT1_HUMAN RAC-alpha serine/threonine-protein kinase OS=Homo sapiens OX=9606 GN=AKT1 PE=1 SV=2",480
+"C",32,0.0299625468164794,"sp|P42336|PK3CA_HUMAN Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit alpha isoform OS=Homo sapiens OX=9606 GN=PIK3CA PE=1 SV=2",1068
+"K",72,0.0674157303370786,"sp|P42336|PK3CA_HUMAN Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit alpha isoform OS=Homo sapiens OX=9606 GN=PIK3CA PE=1 SV=2",1068
+"H",30,0.0280898876404494,"sp|P42336|PK3CA_HUMAN Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit alpha isoform OS=Homo sapiens OX=9606 GN=PIK3CA PE=1 SV=2",1068
+"C",3,0.00895522388059702,"sp|P04406|G3P_HUMAN Glyceraldehyde-3-phosphate dehydrogenase OS=Homo sapiens OX=9606 GN=GAPDH PE=1 SV=3",335
+"K",26,0.0776119402985075,"sp|P04406|G3P_HUMAN Glyceraldehyde-3-phosphate dehydrogenase OS=Homo sapiens OX=9606 GN=GAPDH PE=1 SV=3",335
+"H",10,0.0298507462686567,"sp|P04406|G3P_HUMAN Glyceraldehyde-3-phosphate dehydrogenase OS=Homo sapiens OX=9606 GN=GAPDH PE=1 SV=3",335
+"C",4,0.0201005025125628,"sp|Q06830|PRDX1_HUMAN Peroxiredoxin-1 OS=Homo sapiens OX=9606 GN=PRDX1 PE=1 SV=1",199
+"K",19,0.0954773869346734,"sp|Q06830|PRDX1_HUMAN Peroxiredoxin-1 OS=Homo sapiens OX=9606 GN=PRDX1 PE=1 SV=1",199
+"H",4,0.0201005025125628,"sp|Q06830|PRDX1_HUMAN Peroxiredoxin-1 OS=Homo sapiens OX=9606 GN=PRDX1 PE=1 SV=1",199
+"C",5,0.0476190476190476,"sp|P10599|THIO_HUMAN Thioredoxin OS=Homo sapiens OX=9606 GN=TXN PE=1 SV=3",105
+"K",12,0.114285714285714,"sp|P10599|THIO_HUMAN Thioredoxin OS=Homo sapiens OX=9606 GN=TXN PE=1 SV=3",105
+"H",1,0.00952380952380952,"sp|P10599|THIO_HUMAN Thioredoxin OS=Homo sapiens OX=9606 GN=TXN PE=1 SV=3",105
+"C",4,0.025974025974026,"sp|P00441|SODC_HUMAN Superoxide dismutase [Cu-Zn] OS=Homo sapiens OX=9606 GN=SOD1 PE=1 SV=2",154
+"K",11,0.0714285714285714,"sp|P00441|SODC_HUMAN Superoxide dismutase [Cu-Zn] OS=Homo sapiens OX=9606 GN=SOD1 PE=1 SV=2",154
+"H",8,0.051948051948052,"sp|P00441|SODC_HUMAN Superoxide dismutase [Cu-Zn] OS=Homo sapiens OX=9606 GN=SOD1 PE=1 SV=2",154
+"C",4,0.00759013282732448,"sp|P04040|CATA_HUMAN Catalase OS=Homo sapiens OX=9606 GN=CAT PE=1 SV=3",527
+"K",30,0.0569259962049336,"sp|P04040|CATA_HUMAN Catalase OS=Homo sapiens OX=9606 GN=CAT PE=1 SV=3",527
+"H",22,0.0417457305502846,"sp|P04040|CATA_HUMAN Catalase OS=Homo sapiens OX=9606 GN=CAT PE=1 SV=3",527
+"C",5,0.0246305418719212,"sp|P07203|GPX1_HUMAN Glutathione peroxidase 1 OS=Homo sapiens OX=9606 GN=GPX1 PE=1 SV=4",203
+"K",6,0.0295566502463054,"sp|P07203|GPX1_HUMAN Glutathione peroxidase 1 OS=Homo sapiens OX=9606 GN=GPX1 PE=1 SV=4",203
+"H",2,0.00985221674876847,"sp|P07203|GPX1_HUMAN Glutathione peroxidase 1 OS=Homo sapiens OX=9606 GN=GPX1 PE=1 SV=4",203

@@ -1,0 +1,11 @@
+"protein","observed_max_density","mean_randomized_max_density","sd_randomized_max_density","empirical_p_value","n_permutations"
+"sp|P60484|PTEN_HUMAN Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase and dual-specificity protein phosphatase PTEN OS=Homo sapiens OX=9606 GN=PTEN PE=1 SV=1",0.5,0.4757,0.0697450670253773,0.624,1000
+"sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53 PE=1 SV=4",0.5,0.4128,0.0681234232903838,0.242,1000
+"sp|P31749|AKT1_HUMAN RAC-alpha serine/threonine-protein kinase OS=Homo sapiens OX=9606 GN=AKT1 PE=1 SV=2",0.3,0.4439,0.0659328229119392,1,1000
+"sp|P42336|PK3CA_HUMAN Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit alpha isoform OS=Homo sapiens OX=9606 GN=PIK3CA PE=1 SV=2",0.6,0.5055,0.0691703298715174,0.209,1000
+"sp|P04406|G3P_HUMAN Glyceraldehyde-3-phosphate dehydrogenase OS=Homo sapiens OX=9606 GN=GAPDH PE=1 SV=3",0.4,0.4228,0.0662158934436782,0.904,1000
+"sp|Q06830|PRDX1_HUMAN Peroxiredoxin-1 OS=Homo sapiens OX=9606 GN=PRDX1 PE=1 SV=1",0.4,0.423,0.0696839712979668,0.888,1000
+"sp|P10599|THIO_HUMAN Thioredoxin OS=Homo sapiens OX=9606 GN=TXN PE=1 SV=3",0.4,0.4373,0.0791515948984919,0.909,1000
+"sp|P00441|SODC_HUMAN Superoxide dismutase [Cu-Zn] OS=Homo sapiens OX=9606 GN=SOD1 PE=1 SV=2",0.3,0.4266,0.0740129577703656,1,1000
+"sp|P04040|CATA_HUMAN Catalase OS=Homo sapiens OX=9606 GN=CAT PE=1 SV=3",0.4,0.4282,0.0671510928374905,0.931,1000
+"sp|P07203|GPX1_HUMAN Glutathione peroxidase 1 OS=Homo sapiens OX=9606 GN=GPX1 PE=1 SV=4",0.3,0.2802,0.0655152825854567,0.675,1000

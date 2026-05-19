@@ -1,0 +1,11 @@
+accession,gene,protein_name,rationale
+P60484,PTEN,Phosphatidylinositol 3 4 5-trisphosphate 3-phosphatase and dual-specificity protein phosphatase PTEN,Tumour suppressor and PI3K/Akt pathway regulator
+P04637,TP53,Cellular tumor antigen p53,Tumour suppressor relevant to oxidative stress and cancer biology
+P31749,AKT1,RAC-alpha serine/threonine-protein kinase,PI3K/Akt pathway kinase
+P42336,PIK3CA,Phosphatidylinositol 4 5-bisphosphate 3-kinase catalytic subunit alpha,PI3K pathway catalytic subunit
+P04406,GAPDH,Glyceraldehyde-3-phosphate dehydrogenase,Redox-sensitive metabolic enzyme frequently used in oxidative stress contexts
+Q06830,PRDX1,Peroxiredoxin-1,Redox-active antioxidant enzyme
+P10599,TXN,Thioredoxin,Redox-active thiol-disulfide oxidoreductase
+P00441,SOD1,Superoxide dismutase [Cu-Zn],Antioxidant enzyme
+P04040,CAT,Catalase,Hydrogen peroxide detoxification enzyme
+P07203,GPX1,Glutathione peroxidase 1,Peroxide detoxification enzyme
