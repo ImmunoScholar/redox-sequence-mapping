@@ -15,8 +15,8 @@ Thumbs.db
 # Notebook checkpoints
 .ipynb_checkpoints/
 # Generated results
-results/figures/*.png
-results/figures/*.pdf
+# results/figures/*.png
+# results/figures/*.pdf
 # Temporary files
 tmp/
 temp/

@@ -1,0 +1,10 @@
+"residue","count","frequency","protein","length"
+"C",3,0.0967741935483871,"Protein_A_synthetic",31
+"K",3,0.0967741935483871,"Protein_A_synthetic",31
+"H",3,0.0967741935483871,"Protein_A_synthetic",31
+"C",4,0.125,"Protein_B_synthetic",32
+"K",4,0.125,"Protein_B_synthetic",32
+"H",4,0.125,"Protein_B_synthetic",32
+"C",0,0,"Protein_C_synthetic",34
+"K",4,0.117647058823529,"Protein_C_synthetic",34
+"H",0,0,"Protein_C_synthetic",34

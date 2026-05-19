@@ -1,0 +1,4 @@
+"protein","observed_max_density","mean_randomized_max_density","sd_randomized_max_density","empirical_p_value","n_permutations"
+"Protein_A_synthetic",0.6,0.469,0.0734365664565637,0.12,100
+"Protein_B_synthetic",1,0.578,0.0675397376484108,0,100
+"Protein_C_synthetic",0.3,0.249,0.0577262785248039,0.45,100
