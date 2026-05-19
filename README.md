@@ -2,115 +2,158 @@
 
 ## Overview
 
-This repository contains an R-based sequence-level analytical pipeline for mapping amino acid residues associated with oxidative stress-mediated protein modification.
+This repository contains an R-based sequence-level pipeline for mapping amino acid residues associated with oxidative stress-mediated protein modification.
 
-The pipeline focuses on:
+The current workflow quantifies and visualises the distribution of:
 
 - cysteine (Cys, C)
-
 - lysine (Lys, K)
-
 - histidine (His, H)
 
-These residues are biologically relevant because they can participate in oxidative stress-associated or electrophile-associated protein modification depending on residue chemistry, structural exposure, local microenvironment, and cellular context.
+within protein sequences, with additional sliding-window analysis to identify local residue clustering.
 
-## Scientific Positioning
+The project is intentionally framed as a **primary-sequence analysis pipeline**. It does not infer biochemical reactivity, oxidation status, electrophile adduction, or structural exposure.
 
-This project is deliberately constrained to **primary sequence-level analysis**.
+## Biological Rationale
 
-It does not attempt to predict biochemical reactivity. Instead, it quantifies residue composition and local sequence clustering as a reproducible first-pass strategy for hypothesis prioritisation.
+Oxidative stress can alter protein function through direct oxidation, lipid electrophile adduction, and related post-translational modification processes. Cysteine residues are especially relevant because thiol chemistry is central to many redox-sensitive mechanisms. Lysine and histidine are included as context-dependent residues that can participate in electrophile-associated or oxidative modification depending on local biochemical and structural conditions.
 
-The central question addressed is:
+This repository does not treat these residues as equivalent markers of reactivity. Instead, it provides a reproducible way to quantify their abundance and local clustering in protein primary sequences.
+
+## Analytical Question
+
+The pipeline asks:
 
 > Are oxidative stress-associated residues locally enriched in protein primary sequences beyond what would be expected from amino acid composition alone?
 
-## Interpretation Framework: Inference vs Evidence
+This question is deliberately narrower than predicting oxidative modification. The output is intended for sequence-level prioritisation and downstream hypothesis generation.
 
-This project separates computational inference from biochemical evidence.
+## Methods
 
-### What this pipeline provides
+### 1. Residue Frequency Analysis
 
-The pipeline provides evidence for:
+For each protein sequence, the pipeline counts Cys, Lys, and His residues and normalises each count by total protein length.
 
-- sequence-level abundance of Cys, Lys, and His residues
+Output:
 
-- local clustering of these residues along primary protein sequences
+- global residue counts
+- residue frequencies
+- per-protein summary table
 
-- comparison of observed clustering against randomized sequence controls
+### 2. Sliding-Window Density Analysis
 
-- prioritisation of sequence regions for downstream structural or experimental investigation
+A fixed-size window is moved across each protein sequence. Within each window, the proportion of Cys/Lys/His residues is calculated.
 
-### What this pipeline does not provide
+This identifies regions of local sequence enrichment. These regions should be interpreted as residue-density features, not as biochemical hotspots.
 
-The pipeline does **not** provide evidence for:
+### 3. Composition-Preserving Null Model
 
-- actual oxidative modification
+For each protein, the sequence is randomly permuted while preserving amino acid composition. Maximum residue density is recalculated across randomized sequences.
 
-- electrophile adduction
-
-- redox reactivity
-
-- covalent modification probability
-
-- solvent accessibility
-
-- residue pKa effects
-
-- protein functional perturbation
-
-- disease relevance without additional biological validation
-
-Therefore, outputs should be interpreted as **sequence-derived prioritisation signals**, not as direct biochemical predictions.
+This provides a baseline for asking whether observed clustering exceeds what would be expected from the same amino acid composition arranged randomly.
 
 ## Interpretation and Evidence Boundary
 
 This pipeline provides a reproducible sequence-level framework for identifying local enrichment of oxidative stress-associated residues in protein primary sequences.
 
-In the current example dataset, the analysis shows that selected proteins contain local Cys/Lys/His clustering patterns that exceed composition-preserving randomized sequence expectations. This supports the use of the pipeline as a hypothesis-prioritisation tool for identifying sequence regions that may merit downstream structural or experimental evaluation.
+In the current example dataset, selected proteins contain local Cys/Lys/His clustering patterns that exceed composition-preserving randomized sequence expectations. This supports the use of the pipeline as a prioritisation tool for identifying sequence regions that may merit downstream structural or experimental evaluation.
 
-Importantly, the outputs should be interpreted as residue-enrichment and clustering signals, not as direct evidence of oxidative modification or biochemical reactivity.
+The outputs should be interpreted as residue-enrichment and clustering signals, not as direct evidence of oxidative modification or biochemical reactivity.
 
 Claims about actual oxidation, electrophile adduction, solvent accessibility, residue pKa, or functional protein perturbation would require orthogonal evidence from structural biology, redox proteomics, targeted mutagenesis, mass spectrometry, or biochemical assays.
 
 ## Pipeline Modules
 
 1. Generate example protein FASTA input
-
 2. Quantify Cys/Lys/His residue counts and frequencies
-
 3. Perform sliding-window residue density analysis
-
-4. Compare observed clustering against composition-preserving randomized sequence null models
-
+4. Compare observed clustering against composition-preserving randomized sequence controls
 5. Generate interpretable visual outputs
 
-## Repository Structure
+## Repository Layout
 
-```text
+| Path | Purpose |
+|---|---|
+| `scripts/` | Ordered R scripts for input preparation, residue mapping, sliding-window analysis, null-model testing, and visualisation |
+| `data/raw/` | Example FASTA input used to demonstrate the pipeline |
+| `data/processed/` | Reserved for processed sequence-level outputs in future extensions |
+| `results/tables/` | CSV outputs from residue mapping, sliding-window analysis, and null-model testing |
+| `results/figures/` | Generated visual summaries of residue frequency, local density, and null-model comparison |
+| `renv.lock` | R package lockfile for reproducibility |
+| `docs/` | Project notes and future methodological documentation |
 
-redox-sequence-mapping/
+## Outputs
 
-├── data/
+### Tables
 
-│   ├── raw/
+| File | Description |
+|---|---|
+| `results/tables/residue_mapping_results.csv` | Per-protein Cys/Lys/His counts and frequencies |
+| `results/tables/sliding_window_density.csv` | Local residue-density values across sliding windows |
+| `results/tables/null_model_results.csv` | Observed versus randomized maximum density comparison |
 
-│   └── processed/
+### Figures
 
-├── docs/
+| File | Description |
+|---|---|
+| `results/figures/residue_frequency_plot.png` | Global Cys/Lys/His frequency by protein |
+| `results/figures/sliding_window_density_plot.png` | Local residue-density profiles across sequence positions |
+| `results/figures/null_model_comparison_plot.png` | Observed maximum density compared with randomized sequence controls |
 
-├── environment/
+## Usage
 
-├── metadata/
+Run the full pipeline from the repository root:
 
-├── notebooks/
+```r
+source("run_pipeline.R")
+```
 
-├── results/
+This executes:
 
-│   ├── figures/
+1. example FASTA preparation
+2. residue frequency analysis
+3. sliding-window density analysis
+4. composition-preserving null-model analysis
+5. figure generation
 
-│   └── tables/
+Individual scripts are available in `scripts/` for stepwise inspection.
 
-├── scripts/
+## Reproducibility
 
-└── README.md
+This project uses `renv` to record R package versions.
 
+To restore the project environment:
+
+```r
+renv::restore()
+```
+
+The pipeline uses R and Bioconductor-based sequence handling through `Biostrings`, with data handling and visualisation performed using `tidyverse`, `data.table`, and `patchwork`.
+
+## Current Scope
+
+The current version uses example protein sequences to demonstrate the full workflow end-to-end. This makes the repository executable without requiring external data downloads.
+
+Future versions can extend the same pipeline to reviewed human UniProt/Swiss-Prot protein sequences, residue-specific stratification, multi-window density analysis, higher permutation counts, and proteome-scale statistical correction.
+
+## Limitations
+
+This repository is limited to primary protein sequence analysis.
+
+It does not model:
+
+- three-dimensional protein structure
+- solvent accessibility
+- residue pKa
+- local electrostatics
+- subcellular localization
+- electrophile concentration
+- reaction kinetics
+- cellular redox state
+- experimental detection sensitivity
+
+Therefore, the results should be used for sequence-level prioritisation, not definitive biological inference.
+
+## Intended Use
+
+This project demonstrates a reproducible computational workflow for analysing oxidative stress-associated residue landscapes in protein sequences. It is designed as a transparent foundation for future integration with structural analysis, redox proteomics, or experimental validation.
