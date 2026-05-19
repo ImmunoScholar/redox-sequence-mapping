@@ -110,11 +110,6 @@ Claims about actual oxidation, electrophile adduction, solvent accessibility, re
 
 ## Outputs
 
-| `results/tables/human_residue_mapping_results.csv` | Cys/Lys/His counts and frequencies for the UniProt-derived human protein set |
-| `results/tables/human_sliding_window_density.csv` | Sliding-window residue-density values for the UniProt-derived human protein set |
-| `results/tables/human_null_model_results.csv` | 1000-permutation composition-preserving null-model results for the human protein set |
-| `results/tables/human_sequence_clustering_summary.csv` | Ranked human-protein summary with evidence-boundary interpretation |
-
 ### Tables
 
 | File | Description |
@@ -148,10 +143,11 @@ source("run_pipeline.R")
 This executes:
 
 1. example FASTA preparation
-2. residue frequency analysis
-3. sliding-window density analysis
-4. composition-preserving null-model analysis
-5. figure generation
+2. example residue frequency, sliding-window, null-model, and visualisation workflow
+3. UniProt FASTA retrieval from accession metadata
+4. human-protein residue mapping and sliding-window analysis
+5. 1000-permutation composition-preserving null-model analysis for the human protein set
+6. human-protein result summarisation and figure generation
 
 Individual scripts are available in `scripts/` for stepwise inspection.
 
@@ -169,9 +165,11 @@ The pipeline uses R and Bioconductor-based sequence handling through `Biostrings
 
 ## Current Scope
 
-The current version uses example protein sequences to demonstrate the full workflow end-to-end. This makes the repository executable without requiring external data downloads.
+The current version includes two analysis modes: a synthetic/example FASTA workflow for pipeline validation and a curated UniProt-derived human protein demonstration set retrieved by accession.
 
-Future versions can extend the same pipeline to reviewed human UniProt/Swiss-Prot protein sequences, residue-specific stratification, multi-window density analysis, higher permutation counts, and proteome-scale statistical correction.
+The human-protein workflow analyses selected reviewed Homo sapiens proteins relevant to redox biology, tumour suppression, antioxidant defence, metabolism, and PI3K/Akt signalling. It provides residue-frequency tables, sliding-window density outputs, 1000-permutation composition-preserving null-model results, summary interpretation tables, and human-specific figures.
+
+This is not a full human-proteome-wide analysis. Future versions can extend the same accession-driven workflow to larger reviewed UniProt/Swiss-Prot protein sets, residue-specific stratification, multi-window density analysis, and proteome-scale statistical correction.
 
 ## Limitations
 
