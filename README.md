@@ -116,41 +116,35 @@ Claims about actual oxidation, electrophile adduction, solvent accessibility, re
 
 ## Repository Layout
 
-| Path | Purpose |
-|---|---|
-| `scripts/` | Ordered R scripts for example-sequence analysis, UniProt FASTA retrieval, human-protein analysis, result summarisation, and visualisation |
-| `data/raw/` | Example FASTA input and UniProt-derived human protein FASTA |
-| `data/processed/` | Reserved for processed sequence-level outputs in future extensions |
-| `results/tables/` | CSV outputs from residue mapping, sliding-window analysis, null-model testing, and human-protein summarisation |
-| `results/figures/` | Generated visual summaries for example and UniProt-derived human protein analyses |
-| `renv.lock` | R package lockfile for reproducibility |
-| `metadata/` | Accession list, residue-class rationale, and provenance files for curated human protein inputs |
-| `docs/` | Scientific rationale, project notes, and future methodological documentation |
+- `scripts/` — Ordered R scripts for example-sequence analysis, UniProt FASTA retrieval, human-protein analysis, result summarisation, and visualisation.
+- `data/raw/` — Example FASTA input and UniProt-derived human protein FASTA.
+- `data/processed/` — Reserved for processed sequence-level outputs in future extensions.
+- `results/tables/` — CSV outputs from residue mapping, sliding-window analysis, null-model testing, and human-protein summarisation.
+- `results/figures/` — Generated visual summaries for example and UniProt-derived human protein analyses.
+- `renv.lock` — R package lockfile for reproducibility.
+- `metadata/` — Accession list, residue-class rationale, and provenance files for curated human protein inputs.
+- `docs/` — Scientific rationale, project notes, and future methodological documentation.
 
 ## Outputs
 
 ### Tables
 
-| File | Description |
-|---|---|
-| `results/tables/residue_mapping_results.csv` | Per-protein Cys/Lys/His counts and frequencies |
-| `results/tables/sliding_window_density.csv` | Local residue-density values across sliding windows |
-| `results/tables/null_model_results.csv` | Observed versus randomized maximum density comparison for the example dataset |
-| `results/tables/human_residue_mapping_results.csv` | Cys/Lys/His counts and frequencies for the UniProt-derived human protein set |
-| `results/tables/human_sliding_window_density.csv` | Sliding-window residue-density values for the UniProt-derived human protein set |
-| `results/tables/human_null_model_results.csv` | 1000-permutation composition-preserving null-model results for the human protein set |
-| `results/tables/human_sequence_clustering_summary.csv` | Ranked human-protein summary with evidence-boundary interpretation |
-| `results/tables/human_residue_class_summary.csv` | Human protein residue-class summary for Cys/Lys/His counts, frequencies, rationale, and interpretation boundaries |
+- `results/tables/residue_mapping_results.csv` — Per-protein Cys/Lys/His counts and frequencies.
+- `results/tables/sliding_window_density.csv` — Local residue-density values across sliding windows.
+- `results/tables/null_model_results.csv` — Observed versus randomized maximum density comparison for the example dataset.
+- `results/tables/human_residue_mapping_results.csv` — Cys/Lys/His counts and frequencies for the UniProt-derived human protein set.
+- `results/tables/human_sliding_window_density.csv` — Sliding-window residue-density values for the UniProt-derived human protein set.
+- `results/tables/human_null_model_results.csv` — 1000-permutation composition-preserving null-model results for the human protein set.
+- `results/tables/human_sequence_clustering_summary.csv` — Ranked human-protein summary with evidence-boundary interpretation.
+- `results/tables/human_residue_class_summary.csv` — Human protein residue-class summary for Cys/Lys/His counts, frequencies, rationale, and interpretation boundaries.
 
 ### Figures
 
-| File | Description |
-|---|---|
-| `results/figures/residue_frequency_plot.png` | Global Cys/Lys/His frequency by protein |
-| `results/figures/sliding_window_density_plot.png` | Local residue-density profiles across sequence positions |
-| `results/figures/null_model_comparison_plot.png` | Observed maximum density compared with randomized sequence controls for the example dataset |
-| `results/figures/human_residue_frequency_plot.png` | Cys/Lys/His frequencies in the UniProt-derived human protein set |
-| `results/figures/human_null_model_comparison_plot.png` | Observed versus randomized maximum residue-density comparison for the human protein set |
+- `results/figures/residue_frequency_plot.png` — Global Cys/Lys/His frequency by protein.
+- `results/figures/sliding_window_density_plot.png` — Local residue-density profiles across sequence positions.
+- `results/figures/null_model_comparison_plot.png` — Observed maximum density compared with randomized sequence controls for the example dataset.
+- `results/figures/human_residue_frequency_plot.png` — Cys/Lys/His frequencies in the UniProt-derived human protein set.
+- `results/figures/human_null_model_comparison_plot.png` — Observed versus randomized maximum residue-density comparison for the human protein set.
 
 ## Usage
 
