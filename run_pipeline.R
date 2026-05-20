@@ -21,5 +21,6 @@ source("scripts/06_download_uniprot_human_fasta.R")
 source("scripts/07_analyze_uniprot_human_fasta.R")
 source("scripts/08_summarize_human_results.R")
 source("scripts/09_visualize_human_results.R")
+source("scripts/10_summarize_human_residue_classes.R")
 
 message("Pipeline completed successfully.")

@@ -54,6 +54,24 @@ data/raw/human_redox_relevant_proteins_uniprot.fasta
 
 No human protein sequences are manually typed into this repository.
 
+## Residue-Class Rationale
+
+The pipeline focuses on Cys, Lys, and His because these residue classes contain side-chain chemistries relevant to oxidative stress-mediated and electrophile-associated protein modification biology.
+
+The rationale for each residue class is documented in:
+
+```text
+metadata/residue_class_rationale.csv
+```
+
+A fuller scientific rationale and interpretation boundary is documented in:
+
+```text
+docs/scientific_rationale.md
+```
+
+These files define the residue-class selection logic. They do not imply that any individual residue in the analysed proteins is oxidized, electrophile-adducted, solvent-exposed, biochemically reactive, or functionally modified.
+
 ## Methods
 
 ### 1. Residue Frequency Analysis
@@ -106,8 +124,8 @@ Claims about actual oxidation, electrophile adduction, solvent accessibility, re
 | `results/tables/` | CSV outputs from residue mapping, sliding-window analysis, null-model testing, and human-protein summarisation |
 | `results/figures/` | Generated visual summaries for example and UniProt-derived human protein analyses |
 | `renv.lock` | R package lockfile for reproducibility |
-| `metadata/` | Accession list and provenance files for curated human protein inputs |
-| `docs/` | Project notes and future methodological documentation |
+| `metadata/` | Accession list, residue-class rationale, and provenance files for curated human protein inputs |
+| `docs/` | Scientific rationale, project notes, and future methodological documentation |
 
 ## Outputs
 
@@ -122,6 +140,7 @@ Claims about actual oxidation, electrophile adduction, solvent accessibility, re
 | `results/tables/human_sliding_window_density.csv` | Sliding-window residue-density values for the UniProt-derived human protein set |
 | `results/tables/human_null_model_results.csv` | 1000-permutation composition-preserving null-model results for the human protein set |
 | `results/tables/human_sequence_clustering_summary.csv` | Ranked human-protein summary with evidence-boundary interpretation |
+| `results/tables/human_residue_class_summary.csv` | Human protein residue-class summary for Cys/Lys/His counts, frequencies, rationale, and interpretation boundaries |
 
 ### Figures
 
